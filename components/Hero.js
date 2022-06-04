@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Image from 'next/dist/client/image';
 import data from '../data/Hero.json';
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
           </Col>
           <Col lg={6}>
             <div className="mt-5 mt-lg-0">
-              <img src={data.image} alt="" className="img-fluid mx-auto d-block"/>
+              <Image src={data.image} alt="" className="img-fluid mx-auto d-block"/>
             </div>
           </Col>
         </Row>
