@@ -11,7 +11,7 @@ const Services = () => {
                 <div className="grid-services">
                     {data.blocks.map(service =>
                         <Card
-                            id={service.id}
+                            key ={service.id}
                             icon={service.icon}
                             title={service.title}
                             description={service.description}
